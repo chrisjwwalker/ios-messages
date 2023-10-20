@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2A8E872ACCB60500BB8CDE /* MessagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2A8E862ACCB60500BB8CDE /* MessagesList.swift */; };
+		FE2A8E892ACCB70100BB8CDE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2A8E882ACCB70100BB8CDE /* Settings.swift */; };
 		FECFD29B2A900E1E00B11E2B /* Fake_MessagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD29A2A900E1E00B11E2B /* Fake_MessagesApp.swift */; };
 		FECFD29D2A900E1E00B11E2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD29C2A900E1E00B11E2B /* ContentView.swift */; };
 		FECFD29F2A900E2000B11E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFD29E2A900E2000B11E2B /* Assets.xcassets */; };
 		FECFD2A22A900E2000B11E2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFD2A12A900E2000B11E2B /* Preview Assets.xcassets */; };
+		FECFD2AA2A900F1200B11E2B /* Namespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD2A92A900F1200B11E2B /* Namespaces.swift */; };
+		FECFD2AC2A900F4F00B11E2B /* ConversationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD2AB2A900F4F00B11E2B /* ConversationButton.swift */; };
+		FECFD2AF2A90C5A100B11E2B /* ConversationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFD2AE2A90C5A100B11E2B /* ConversationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE2A8E862ACCB60500BB8CDE /* MessagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesList.swift; sourceTree = "<group>"; };
+		FE2A8E882ACCB70100BB8CDE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FECFD2972A900E1E00B11E2B /* Fake Messages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fake Messages.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFD29A2A900E1E00B11E2B /* Fake_MessagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fake_MessagesApp.swift; sourceTree = "<group>"; };
 		FECFD29C2A900E1E00B11E2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FECFD29E2A900E2000B11E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FECFD2A12A900E2000B11E2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FECFD2A92A900F1200B11E2B /* Namespaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespaces.swift; sourceTree = "<group>"; };
+		FECFD2AB2A900F4F00B11E2B /* ConversationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationButton.swift; sourceTree = "<group>"; };
+		FECFD2AE2A90C5A100B11E2B /* ConversationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE2A8E852ACCB5C400BB8CDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE2A8E862ACCB60500BB8CDE /* MessagesList.swift */,
+				FE2A8E882ACCB70100BB8CDE /* Settings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FECFD28E2A900E1E00B11E2B = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +70,14 @@
 		FECFD2992A900E1E00B11E2B /* Fake Messages */ = {
 			isa = PBXGroup;
 			children = (
-				FECFD29A2A900E1E00B11E2B /* Fake_MessagesApp.swift */,
 				FECFD29C2A900E1E00B11E2B /* ContentView.swift */,
+				FECFD29A2A900E1E00B11E2B /* Fake_MessagesApp.swift */,
+				FECFD2A92A900F1200B11E2B /* Namespaces.swift */,
 				FECFD29E2A900E2000B11E2B /* Assets.xcassets */,
+				FECFD2A82A900F0500B11E2B /* Components */,
+				FECFD2AD2A90C57900B11E2B /* Data */,
 				FECFD2A02A900E2000B11E2B /* Preview Content */,
+				FE2A8E852ACCB5C400BB8CDE /* Views */,
 			);
 			path = "Fake Messages";
 			sourceTree = "<group>";
@@ -65,6 +88,22 @@
 				FECFD2A12A900E2000B11E2B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FECFD2A82A900F0500B11E2B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FECFD2AB2A900F4F00B11E2B /* ConversationButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FECFD2AD2A90C57900B11E2B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FECFD2AE2A90C5A100B11E2B /* ConversationData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2A8E892ACCB70100BB8CDE /* Settings.swift in Sources */,
 				FECFD29D2A900E1E00B11E2B /* ContentView.swift in Sources */,
+				FECFD2AA2A900F1200B11E2B /* Namespaces.swift in Sources */,
+				FECFD2AC2A900F4F00B11E2B /* ConversationButton.swift in Sources */,
+				FECFD2AF2A90C5A100B11E2B /* ConversationData.swift in Sources */,
 				FECFD29B2A900E1E00B11E2B /* Fake_MessagesApp.swift in Sources */,
+				FE2A8E872ACCB60500BB8CDE /* MessagesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
